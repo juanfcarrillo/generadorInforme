@@ -23,7 +23,7 @@ export const App = () => {
   const [editFile, setEditFile] = useState({})
   const [openComponents, setOpenComponents] = useState({inputRawFiles : true, sideArchives: false, sideCommentaries: false, openComment: false, codeTag: false, makeReport: false})
 
-  const baseUrl = "http://localhost:80/api/make-report"
+  const baseUrl = "https://generadorinforme-production.up.railway.app/api/make-report"
   
   
   const downloadReport = async () => {
