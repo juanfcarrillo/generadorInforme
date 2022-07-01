@@ -27,7 +27,7 @@ const createViteServer = async () => {
     
     const inProduction = process.env.NODE_ENV === "production"
     
-    const PORT = 3000
+    const PORT = process.env.PORT || 3000
     const __dirname = path.dirname(fileURLToPath(import.meta.url))
     const requires = createRequire(import.meta.url)
 
